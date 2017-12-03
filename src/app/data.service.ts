@@ -13,13 +13,13 @@ export class DataService {
 
   // Get the list of all events
   getEvents() {
-    return this._http.get("/events")
+    return this._http.get('/events')
       .map(result => this.result = result.json().data);
   }
 
   // Get the list of all users
   getUsers() {
-    return this._http.get("/users")
+    return this._http.get('/users')
       .map(result => this.result = result.json().data);
   }
 

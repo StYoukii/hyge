@@ -7,12 +7,5 @@ import { DataService } from './data.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  events: Array<any>;
 
-  constructor(private _dataService: DataService) {
-    this._dataService.getEvents()
-      .subscribe(res => this.events = res);
-  }
-
-  title = 'Hyge';
 }

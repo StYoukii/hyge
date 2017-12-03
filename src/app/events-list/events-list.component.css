@@ -1,0 +1,12 @@
+a.list-group-item {
+  border: 0;
+  border-radius: 0;
+}
+
+a.list-group-item.even {
+  background-color: #ff4e0d;
+}
+
+a.list-group-item.odd {
+  background-color: #ff8d63;
+}

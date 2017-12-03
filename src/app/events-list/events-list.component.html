@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-xs-12 col-sm-10 col-md-8 col-lg-8 center-block center">
+    <div class="list-group">
+      <a href="#" class="list-group-item" *ngFor="let event of events; let index=index; let odd=odd; let even=even;" [ngClass]="{ odd: odd, even: even }">
+        <h1>{{event.name}}</h1>
+        <p>{{event.city}}</p>
+        <img src="{{event.base64Image}}">
+      </a>
+    </div>
+  </div>
+</div>
