@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { DataService } from './data.service';
+import { EventService } from './services/event/event.service';
 
 @Component({
   selector: 'app-root',

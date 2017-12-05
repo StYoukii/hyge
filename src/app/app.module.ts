@@ -2,9 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HttpModule } from '@angular/http';
-import { DataService } from './data.service';
-import { EventsListComponent } from './events-list/events-list.component';
-import { SearchComponent } from './search/search.component';
+import { EventsListComponent } from './components/events-list/events-list.component';
+import { SearchComponent } from './components/search/search.component';
+import { EventService } from './services/event/event.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,7 @@ import { SearchComponent } from './search/search.component';
     BrowserModule,
     HttpModule
   ],
-  providers: [DataService],
+  providers: [EventService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
