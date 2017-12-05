@@ -1,8 +1,11 @@
 export class User {
   public firstName: string;
   public lastName: string;
-  public mail: string;
+  public gender: string;
+  public emailAddress: string;
+  public emailAddressConfirm: string;
   public password: string;
+  public passwordConfirm: string;
   public profilePhoto: string;
   public birthDate: Date;
   public city: string;
