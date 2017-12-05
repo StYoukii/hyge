@@ -3,8 +3,20 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.4.
 
 ## Development server
+Run `ng build`
+Run `node server` for a dev server. Navigate to `http://localhost:8000/`.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Mongo
+
+### Lancement de MongoDB
+"C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe"
+
+### Connexion à la base de données
+"C:\Program Files\MongoDB\Server\3.4\bin\mongo.exe"
+
+### Commandes mongo
+- Lister les bases de données MongoDB : db.adminCommand("listDatabases");
+- Connexion à une base de données : connect("hyge");
 
 ## Code scaffolding
 
