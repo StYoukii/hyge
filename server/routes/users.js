@@ -33,7 +33,7 @@ router.post('/', function(req, res) {
     email : req.body.email,
     password : req.body.password, //TODO AM : à changer??
     profilePhoto : req.body.profilePhoto,
-    /*birthDate : new Date(req.body.birthDate),*/
+    birthDate : new Date(req.body.birthDate),
     city : req.body.city,
     phoneNumber : req.body.phoneNumber,
   });
