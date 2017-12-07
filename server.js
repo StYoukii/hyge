@@ -7,6 +7,7 @@ const app = express();
 // Routers
 const usersRouter = require('./server/routes/users');
 const eventsRouter = require('./server/routes/events');
+
 // API file for interacting with MongoDB
 const api = require('./server/routes/api');
 
