@@ -1,68 +1,70 @@
-<div>
-  <form (ngSubmit)="onSubmit()">
-    <fieldset>
-      <legend>Create user</legend>
+<div class="row">
+  <div class="col-xs-12 col-sm-10 col-md-8 col-lg-8 center-block center">
+    <form (ngSubmit)="onSubmit()">
+      <fieldset>
+        <legend>Create user</legend>
 
-      <div class="form-group">
-        <label for="firstName">FirstName</label>
-        <input type="text" class="form-control" id="firstName" [(ngModel)]="model.firstName" name="firstName" required="required">
-      </div>
+        <div class="form-group">
+          <label for="firstName">FirstName</label>
+          <input type="text" class="form-control" id="firstName" [(ngModel)]="model.firstName" name="firstName" required="required">
+        </div>
 
-      <div class="form-group">
-        <label for="lastName">LastName</label>
-        <input type="text" class="form-control" id="lastName" [(ngModel)]="model.lastName" name="lastName" required>
-      </div>
+        <div class="form-group">
+          <label for="lastName">LastName</label>
+          <input type="text" class="form-control" id="lastName" [(ngModel)]="model.lastName" name="lastName" required>
+        </div>
 
-      <div class="form-group">
-        <label class="control-label">Gender</label>
-        <label for="male" class="radio-inline">
-          <input type="radio" id="male" [(ngModel)]="model.gender" name="gender" value="1" required>Male</label>
-        <label for="female" class="radio-inline">
-          <input type="radio" id="female" [(ngModel)]="model.gender" name="gender" value="0" required>Female</label>
-      </div>
+        <div class="form-group">
+          <label class="control-label">Gender</label>
+          <label for="male" class="radio-inline">
+            <input type="radio" id="male" [(ngModel)]="model.gender" name="gender" value="1" required>Male</label>
+          <label for="female" class="radio-inline">
+            <input type="radio" id="female" [(ngModel)]="model.gender" name="gender" value="0" required>Female</label>
+        </div>
 
-      <div class="form-group">
-        <label for="emailAddress">E-mail address</label>
-        <input type="email" class="form-control" id="emailAddress" [(ngModel)]="model.emailAddress" name="emailAddress" required>
-      </div>
+        <div class="form-group">
+          <label for="emailAddress">E-mail address</label>
+          <input type="email" class="form-control" id="emailAddress" [(ngModel)]="model.emailAddress" name="emailAddress" required>
+        </div>
 
-      <div class="form-group">
-        <label for="emailAddressConfirm">E-mail address confirm</label>
-        <input type="email" class="form-control" id="emailAddressConfirm" [(ngModel)]="model.emailAddressConfirm" name="emailAddressConfirm" required>
-      </div>
+        <div class="form-group">
+          <label for="emailAddressConfirm">E-mail address confirm</label>
+          <input type="email" class="form-control" id="emailAddressConfirm" [(ngModel)]="model.emailAddressConfirm" name="emailAddressConfirm" required>
+        </div>
 
-      <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" class="form-control" id="password" [(ngModel)]="model.password" name="password" required>
-      </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" [(ngModel)]="model.password" name="password" required>
+        </div>
 
-      <div class="form-group">
-        <label for="passwordConfirm">Password confirm</label>
-        <input type="password" class="form-control" id="passwordConfirm" [(ngModel)]="model.passwordConfirm" name="passwordConfirm" required>
-      </div>
+        <div class="form-group">
+          <label for="passwordConfirm">Password confirm</label>
+          <input type="password" class="form-control" id="passwordConfirm" [(ngModel)]="model.passwordConfirm" name="passwordConfirm" required>
+        </div>
 
-      <div class="form-group">
-        <label for="profilePhoto">Profile photo</label>
-        <input type="file" class="form-control" id="profilePhoto" [(ngModel)]="model.profilePhoto" name="profilePhoto">
-      </div>
+        <div class="form-group">
+          <label for="profilePhoto">Profile photo</label>
+          <input type="file" class="form-control" id="profilePhoto" [(ngModel)]="model.profilePhoto" name="profilePhoto">
+        </div>
 
-      <div class="form-group">
-        <label for="birthDate">Birth Date</label>
-        <input type="date" class="form-control" id="birthDate" [(ngModel)]="model.birthDate" name="birthDate" required>
-      </div>
+        <div class="form-group">
+          <label for="birthDate">Birth Date</label>
+          <input type="date" class="form-control" id="birthDate" [(ngModel)]="model.birthDate" name="birthDate" required>
+        </div>
 
-      <div class="form-group">
-        <label for="city">City</label>
-        <input type="text" class="form-control" id="city" [(ngModel)]="model.city" name="city" required>
-      </div>
+        <div class="form-group">
+          <label for="city">City</label>
+          <input type="text" class="form-control" id="city" [(ngModel)]="model.city" name="city" required>
+        </div>
 
-      <div class="form-group">
-        <label for="phoneNumber">Phone Number</label>
-        <input type="text" class="form-control" id="phoneNumber" [(ngModel)]="model.phoneNumber" name="phoneNumber" required>
-      </div>
+        <div class="form-group">
+          <label for="phoneNumber">Phone Number</label>
+          <input type="text" class="form-control" id="phoneNumber" [(ngModel)]="model.phoneNumber" name="phoneNumber" required>
+        </div>
 
-      <button type="submit" class="btn btn-success">Submit</button>
-      <button type="reset" class="btn btn-default">Reset</button>
-    </fieldset>
-  </form>
+        <button type="submit" class="btn btn-success">Submit</button>
+        <button type="reset" class="btn btn-default">Reset</button>
+      </fieldset>
+    </form>
+  </div>
 </div>
