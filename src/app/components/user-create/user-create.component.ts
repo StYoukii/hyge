@@ -17,7 +17,7 @@ export class UserCreateComponent implements OnInit {
     this.model = new User;
   }
 
-  // TODO
+  // TODO ajouter les fonctions de vérification des champs
   onSubmit() {
     console.log('Demande ajout nouvel utilisateur');
     this.userService.createUser(this.model);

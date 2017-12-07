@@ -3,8 +3,8 @@ export class User {
   public firstName: string;
   public lastName: string;
   public gender: string;
-  public emailAddress: string;
-  public emailAddressConfirm: string;
+  public email: string;
+  public emailConfirm: string;
   public password: string;
   public passwordConfirm: string;
   public profilePhoto: string;
@@ -14,4 +14,6 @@ export class User {
   public friendsList: [string];
 
   constructor() { }
+
+
 }
