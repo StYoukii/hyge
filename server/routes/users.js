@@ -27,6 +27,7 @@ router.post('/', function(req, res) {
 
   // Création d'un nouvel utilisateur
   let user = new User({
+    username : req.body.username,
     firstName : req.body.firstName,
     lastName : req.body.lastName,
     gender : req.body.gender,
