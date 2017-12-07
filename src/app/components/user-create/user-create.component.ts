@@ -18,6 +18,6 @@ export class UserCreateComponent implements OnInit {
 
   // TODO
   onSubmit() {
-    console.log('Nouvel utilisateur créé');
+
   }
 }

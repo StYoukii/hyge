@@ -7,21 +7,5 @@ import 'rxjs/add/operator/map';
 export class EventService {
   result: any;
 
-  constructor(private _http: Http) { }
-
-  // Get event by id
-  getEventById(id) {
-
-  }
-
-  // Get event by city
-  getEventByCity(city) {
-
-  }
-
-  // Get the list of all events
-  getAllEvents() {
-    return this._http.get('/events')
-      .map(result => this.result = result.json().data);
-  }
+  constructor() { }
 }
