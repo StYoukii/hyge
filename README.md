@@ -2,9 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.4.
 
-## Development server
-Run `ng build`
-Run `node server` for a dev server. Navigate to `http://localhost:8000/`.
+## Lancement du serveur
+Lancement du serveur grâce à la commande "nodemon server"
 
 ## Mongo
 
@@ -28,10 +27,6 @@ Run `ng generate component component-name` to generate a new component. You can 
 - Créer un dossier portant le nom du nouveau composant : mkdir user
 - Se rendre dans le dossier nouvellement créé 'hyge\src\app\components\user'
 - Générer un nouveau composant à l'aide de la commande 'ng generate component user --flat'
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
 ## Running unit tests
 
