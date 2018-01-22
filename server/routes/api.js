@@ -26,20 +26,6 @@ let response = {
   message: null
 };
 
-// Get events
-router.get('/events', (req, res) => {
-  connection((db) => {
-    db.collection('events')
-      .find()
-      .toArray()
-      .then((events) => {
-        response.data = events;
-        res.json(response);
-      })
-      .catch((err) => {
-        sendError(err, res);
-      });
-  });
-});
+
 
 module.exports = router;

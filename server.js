@@ -11,6 +11,13 @@ const eventsRouter = require('./server/routes/events');
 // API file for interacting with MongoDB
 const api = require('./server/routes/api');
 
+app.all('*', function(req, res, next) {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, OPTIONS');
+  res.header('Access-Control-Allow-Headers', 'Content-Type');
+  next();
+});
+
 // Parsers
 app.use(bodyParser.json());
 
